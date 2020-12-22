@@ -1,0 +1,92 @@
+// E6E6E6::main color
+// F0F0F0::control-color
+// 8ABAE0:: eqalto
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .calculator {
+    width: 25rem;
+    padding: 10px;
+    background-color: #e6e6e6;
+    .display {
+      height: 50px;
+      background-color: darkgray;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 25px;
+      padding: 0 10px;
+    }
+    .clear-backspace-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 10px;
+      .clr-bks-btn {
+        height: 60px;
+        width: 89px;
+        margin: 1px;
+        cursor: pointer;
+        border: solid 1px lightgray;
+        &:active {
+          outline: none;
+        }
+        &:focus {
+          outline: none;
+        }
+        &.last {
+          width: 60px;
+          margin-left: 7px;
+        }
+      }
+    }
+    .pad-box {
+      display: flex;
+      justify-content: center;
+      .num-pad {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .custom-button {
+          flex: 0 0 32%;
+          height: 60px;
+          margin: 1px;
+          cursor: pointer;
+          border: solid 1px lightgray;
+          &:active {
+            outline: none;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .operation-pad {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .custom-button {
+          height: 60px;
+          width: 60px;
+          margin: 1px;
+          cursor: pointer;
+          border: solid 1px lightgray;
+          &:active {
+            outline: none;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
